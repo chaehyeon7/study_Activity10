@@ -33,8 +33,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent (MainActivity.this, MainActivity.class);
 
                     //intent에 값을 저장
-                    intent.putExtra("m_name", name);
-                    intent.putExtra("m_age", age);
+//                    intent.putExtra("m_name", name);
+//                    intent.putExtra("m_age", age);
+
+//                Bundle에 값을 저장
+                Bundle bundle = new Bundle();
+                bundle.putString("m_name",name);
+                bundle.putString("m_age",age);
+
+                //intent에 bundle객체를 저장
+                intent.putExtras( bundle );
 
                     startActivity(intent);
             }

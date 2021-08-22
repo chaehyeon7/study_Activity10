@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("m_age", age);
 
                     startActivity(intent);
-
             }
         });
 
